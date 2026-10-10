@@ -19,7 +19,7 @@ jobs:
         run:  'echo "Todays date and the Time is: $(date)"'
 
       - name: Print the list of files in the repo
-        run:  pwd && ls -R
+        run:  ls -R
 
       - name: Runners operating system
         run:  'echo "Operating System: $RUNNER_OS "'
