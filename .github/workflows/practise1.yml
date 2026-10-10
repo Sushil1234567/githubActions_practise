@@ -16,13 +16,13 @@ jobs:
         run: echo "hello , demo pipeline !"
 
       - name: Print the date & time
-        run:  echo " Todays date and the Time is: $(date) "
+        run:  echo '"Todays date and the Time is: $(date)"'
 
       - name: Print the list of files in the repo
         run:  pwd && ls -R
 
       - name: Runners operating system
-        run:  echo "Operating System: $RUNNER_OS "
+        run:  echo '"Operating System: $RUNNER_OS "'
  
  
  
