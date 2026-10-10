@@ -1,0 +1,24 @@
+#this is just an example pipeline
+
+name: practise1
+on:
+ push:
+  branches: [main]
+
+jobs:
+  greet:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        
+      - name: Print a message
+        run: echo "hello , demo pipeline !"
+ 
+ 
+ 
+
+ 
+
+
+ 
