@@ -1,12 +1,12 @@
 name: Scheduled Workflow
 on: 
    schedule:
-      - cron: "40 14 * * *"
+      - cron: "0 0 * * *"
 
 jobs:
    ScheduledWorkflow:
       runs-on: ubuntu-latest
       steps:
-         - name: "Runs on 8 45 pm"
+         - name: "Runs on midnight"
            run: echo "run success "
          
