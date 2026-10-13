@@ -1,0 +1,16 @@
+name: Scheduled Workflow
+on: 
+ schedule: 
+   - cron: "42 19 * * *"
+
+jobs:
+  ScheduledJob:
+    runs-on: ubuntu-latest
+    steps:
+     - name: Workflow 0
+       run:  echo "This job runs every midnight"
+
+    
+   
+
+   
