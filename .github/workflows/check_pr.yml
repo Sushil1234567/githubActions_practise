@@ -1,0 +1,15 @@
+name: checks_pr
+on:
+ pull_request:
+   branches: [main]
+
+jobs:
+  Notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print the branch name
+        run: |
+         echo "PR running on branch: ${{ github.head_ref }}"
+         
+   
+ 
