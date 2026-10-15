@@ -1,0 +1,44 @@
+name: Matrix job
+
+on: 
+ push :
+  branches: [main]
+
+jobs:
+  Matrix:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+         python-versions : [ 3.10, 3.11, 3.12 ]
+         os: [ windows-latest, macos-latest ]
+    steps:
+      - name: "Checkout repository"
+        uses: action/checkout@v6
+
+      - name: "Setup pyhton"
+        uses: action/setup-python@v5
+        with:
+          python-versions : ${{ matrix.python-versions }}
+      - name: "Print the version"
+        run: python --version
+
+        
+
+
+
+
+          
+          
+
+
+
+
+
+       
+
+
+        
+ 
+
+         
